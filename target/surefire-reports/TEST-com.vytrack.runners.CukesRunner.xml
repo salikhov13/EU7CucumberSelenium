@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.vytrack.runners.CukesRunner" time="36.354" tests="3" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/farida/IdeaProjects/EU7CucumberSelenium/target/test-classes:/Users/farida/IdeaProjects/EU7CucumberSelenium/target/classes:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.0/selenium-java-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.0/selenium-api-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.0/selenium-chrome-driver-4.1.0.jar:/Users/farida/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/farida/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/farida/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.0/selenium-chromium-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.0/selenium-json-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.0/selenium-devtools-v85-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v94/4.1.0/selenium-devtools-v94-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v95/4.1.0/selenium-devtools-v95-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v96/4.1.0/selenium-devtools-v96-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.0/selenium-edge-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.0/selenium-firefox-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-firefox-xpi-driver/4.1.0/selenium-firefox-xpi-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.0/selenium-ie-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.0/selenium-opera-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.0/selenium-remote-driver-4.1.0.jar:/Users/farida/.m2/repository/com/beust/jcommander/1.81/jcommander-1.81.jar:/Users/farida/.m2/repository/io/netty/netty-buffer/4.1.69.Final/netty-buffer-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-codec-http/4.1.69.Final/netty-codec-http-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-codec/4.1.69.Final/netty-codec-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-handler/4.1.69.Final/netty-handler-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-common/4.1.69.Final/netty-common-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-epoll/4.1.69.Final/netty-transport-native-epoll-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.69.Final/netty-transport-native-kqueue-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.69.Final/netty-transport-native-unix-common-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport/4.1.69.Final/netty-transport-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-resolver/4.1.69.Final/netty-resolver-4.1.69.Final.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-api/1.9.0/opentelemetry-api-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-context/1.9.0/opentelemetry-context-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.9.0/opentelemetry-exporter-logging-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.9.0-alpha/opentelemetry-sdk-metrics-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.9.0-alpha/opentelemetry-sdk-logs-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.9.0/opentelemetry-sdk-common-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.9.0/opentelemetry-sdk-extension-autoconfigure-spi-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.9.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.9.0/opentelemetry-sdk-trace-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-api-metrics/1.9.0-alpha/opentelemetry-api-metrics-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.9.0/opentelemetry-sdk-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.9.0-alpha/opentelemetry-semconv-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/farida/.m2/repository/net/bytebuddy/byte-buddy/1.12.1/byte-buddy-1.12.1.jar:/Users/farida/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/farida/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/farida/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/farida/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/farida/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/farida/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/farida/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/farida/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.0/selenium-http-4.1.0.jar:/Users/farida/.m2/repository/net/jodah/failsafe/2.4.4/failsafe-2.4.4.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.0/selenium-safari-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.0/selenium-support-4.1.0.jar:/Users/farida/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar:/Users/farida/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/farida/.m2/repository/com/google/code/gson/gson/2.8.8/gson-2.8.8.jar:/Users/farida/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java/3.2.12/docker-java-3.2.12.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-core/3.2.12/docker-java-core-3.2.12.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12.jar:/Users/farida/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/farida/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/farida/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/farida/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/farida/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/farida/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/farida/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/farida/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/farida/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.12/docker-java-transport-httpclient5-3.2.12.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12.jar:/Users/farida/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/farida/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/farida/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/farida/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/farida/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/Users/farida/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/farida/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/farida/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/farida/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/Users/farida/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/Users/farida/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/farida/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/farida/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/farida/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/farida/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/farida/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/farida/IdeaProjects/EU7CucumberSelenium/target/surefire/surefirebooter4137472118358306450.jar /Users/farida/IdeaProjects/EU7CucumberSelenium/target/surefire 2022-02-10T12-39-57_315-jvmRun1 surefire12635523894036193952tmp surefire_07135194119107444310tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/farida/IdeaProjects/EU7CucumberSelenium/target/test-classes:/Users/farida/IdeaProjects/EU7CucumberSelenium/target/classes:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.0/selenium-java-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.0/selenium-api-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.0/selenium-chrome-driver-4.1.0.jar:/Users/farida/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/farida/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/farida/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.0/selenium-chromium-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.0/selenium-json-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.0/selenium-devtools-v85-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v94/4.1.0/selenium-devtools-v94-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v95/4.1.0/selenium-devtools-v95-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v96/4.1.0/selenium-devtools-v96-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.0/selenium-edge-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.0/selenium-firefox-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-firefox-xpi-driver/4.1.0/selenium-firefox-xpi-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.0/selenium-ie-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.0/selenium-opera-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.0/selenium-remote-driver-4.1.0.jar:/Users/farida/.m2/repository/com/beust/jcommander/1.81/jcommander-1.81.jar:/Users/farida/.m2/repository/io/netty/netty-buffer/4.1.69.Final/netty-buffer-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-codec-http/4.1.69.Final/netty-codec-http-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-codec/4.1.69.Final/netty-codec-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-handler/4.1.69.Final/netty-handler-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-common/4.1.69.Final/netty-common-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-epoll/4.1.69.Final/netty-transport-native-epoll-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.69.Final/netty-transport-native-kqueue-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.69.Final/netty-transport-native-unix-common-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport/4.1.69.Final/netty-transport-4.1.69.Final.jar:/Users/farida/.m2/repository/io/netty/netty-resolver/4.1.69.Final/netty-resolver-4.1.69.Final.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-api/1.9.0/opentelemetry-api-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-context/1.9.0/opentelemetry-context-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.9.0/opentelemetry-exporter-logging-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.9.0-alpha/opentelemetry-sdk-metrics-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.9.0-alpha/opentelemetry-sdk-logs-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.9.0/opentelemetry-sdk-common-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.9.0/opentelemetry-sdk-extension-autoconfigure-spi-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.9.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.9.0/opentelemetry-sdk-trace-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-api-metrics/1.9.0-alpha/opentelemetry-api-metrics-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.9.0/opentelemetry-sdk-1.9.0.jar:/Users/farida/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.9.0-alpha/opentelemetry-semconv-1.9.0-alpha.jar:/Users/farida/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/farida/.m2/repository/net/bytebuddy/byte-buddy/1.12.1/byte-buddy-1.12.1.jar:/Users/farida/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/farida/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/farida/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/farida/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/farida/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/farida/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/farida/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/farida/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/farida/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.0/selenium-http-4.1.0.jar:/Users/farida/.m2/repository/net/jodah/failsafe/2.4.4/failsafe-2.4.4.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.0/selenium-safari-driver-4.1.0.jar:/Users/farida/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.0/selenium-support-4.1.0.jar:/Users/farida/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar:/Users/farida/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/farida/.m2/repository/com/google/code/gson/gson/2.8.8/gson-2.8.8.jar:/Users/farida/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java/3.2.12/docker-java-3.2.12.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-core/3.2.12/docker-java-core-3.2.12.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12.jar:/Users/farida/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/farida/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/farida/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/farida/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/farida/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/farida/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/farida/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/farida/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/farida/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.12/docker-java-transport-httpclient5-3.2.12.jar:/Users/farida/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12.jar:/Users/farida/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/farida/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/farida/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/farida/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/farida/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/Users/farida/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/farida/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/farida/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/farida/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/Users/farida/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/Users/farida/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/farida/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/farida/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/farida/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/farida/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/farida/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/farida/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/farida/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/farida"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/farida/IdeaProjects/EU7CucumberSelenium"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/farida/IdeaProjects/EU7CucumberSelenium/target/surefire/surefirebooter4137472118358306450.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.2+0"/>
+    <property name="user.name" value="farida"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.0.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/farida/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/09/4fdkqd8n56d087nkxsyfhqhr0000gn/T/"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="/Users/farida/IdeaProjects/EU7CucumberSelenium"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/farida/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="17.0.2+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Driver user" classname="Account Types" time="13.972"/>
+  <testcase name="Sales manager user" classname="Account Types" time="11.005">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[	This is coming from before
+]]></system-out>
+    <system-err><![CDATA[Feb 10, 2022 12:40:11 PM org.openqa.selenium.net.HostIdentifier resolveHostName
+WARNING: Failed to resolve host name
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:472)
+	at java.base/java.util.concurrent.TimeUnit.timedWait(TimeUnit.java:408)
+	at java.base/java.lang.ProcessImpl.waitFor(ProcessImpl.java:449)
+	at org.openqa.selenium.net.HostIdentifier.resolveHostName(HostIdentifier.java:52)
+	at org.openqa.selenium.net.HostIdentifier.getHostName(HostIdentifier.java:116)
+	at org.openqa.selenium.WebDriverException.getSystemInformation(WebDriverException.java:95)
+	at org.openqa.selenium.WebDriverException.createMessage(WebDriverException.java:87)
+	at org.openqa.selenium.WebDriverException.getMessage(WebDriverException.java:65)
+	at java.base/java.lang.Throwable.getLocalizedMessage(Throwable.java:397)
+	at java.base/java.lang.Throwable.toString(Throwable.java:496)
+	at java.base/java.lang.Throwable.<init>(Throwable.java:317)
+	at java.base/java.lang.Exception.<init>(Exception.java:103)
+	at java.base/java.lang.RuntimeException.<init>(RuntimeException.java:97)
+	at java.base/java.util.concurrent.CompletionException.<init>(CompletionException.java:88)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Exception in thread "Driver Service Executor" java.lang.RuntimeException: java.lang.InterruptedException
+	at org.openqa.selenium.net.HostIdentifier.resolveHostName(HostIdentifier.java:67)
+	at org.openqa.selenium.net.HostIdentifier.getHostName(HostIdentifier.java:116)
+	at org.openqa.selenium.WebDriverException.getSystemInformation(WebDriverException.java:95)
+	at org.openqa.selenium.WebDriverException.createMessage(WebDriverException.java:87)
+	at org.openqa.selenium.WebDriverException.getMessage(WebDriverException.java:65)
+	at java.base/java.lang.Throwable.getLocalizedMessage(Throwable.java:397)
+	at java.base/java.lang.Throwable.toString(Throwable.java:496)
+	at java.base/java.lang.Throwable.<init>(Throwable.java:317)
+	at java.base/java.lang.Exception.<init>(Exception.java:103)
+	at java.base/java.lang.RuntimeException.<init>(RuntimeException.java:97)
+	at java.base/java.util.concurrent.CompletionException.<init>(CompletionException.java:88)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.InterruptedException
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:472)
+	at java.base/java.util.concurrent.TimeUnit.timedWait(TimeUnit.java:408)
+	at java.base/java.lang.ProcessImpl.waitFor(ProcessImpl.java:449)
+	at org.openqa.selenium.net.HostIdentifier.resolveHostName(HostIdentifier.java:52)
+	... 16 more
+Feb 10, 2022 12:40:11 PM org.openqa.selenium.net.HostIdentifier resolveHostName
+WARNING: Failed to resolve host name
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:472)
+	at java.base/java.util.concurrent.TimeUnit.timedWait(TimeUnit.java:408)
+	at java.base/java.lang.ProcessImpl.waitFor(ProcessImpl.java:449)
+	at org.openqa.selenium.net.HostIdentifier.resolveHostName(HostIdentifier.java:52)
+	at org.openqa.selenium.net.HostIdentifier.getHostName(HostIdentifier.java:116)
+	at org.openqa.selenium.WebDriverException.getSystemInformation(WebDriverException.java:95)
+	at org.openqa.selenium.WebDriverException.createMessage(WebDriverException.java:87)
+	at org.openqa.selenium.WebDriverException.getMessage(WebDriverException.java:65)
+	at java.base/java.lang.Throwable.getLocalizedMessage(Throwable.java:397)
+	at java.base/java.lang.Throwable.toString(Throwable.java:496)
+	at java.base/java.lang.Throwable.<init>(Throwable.java:317)
+	at java.base/java.lang.Exception.<init>(Exception.java:103)
+	at java.base/java.lang.RuntimeException.<init>(RuntimeException.java:97)
+	at java.base/java.util.concurrent.CompletionException.<init>(CompletionException.java:88)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Exception in thread "Driver Command Executor" java.lang.RuntimeException: java.lang.InterruptedException
+	at org.openqa.selenium.net.HostIdentifier.resolveHostName(HostIdentifier.java:67)
+	at org.openqa.selenium.net.HostIdentifier.getHostName(HostIdentifier.java:116)
+	at org.openqa.selenium.WebDriverException.getSystemInformation(WebDriverException.java:95)
+	at org.openqa.selenium.WebDriverException.createMessage(WebDriverException.java:87)
+	at org.openqa.selenium.WebDriverException.getMessage(WebDriverException.java:65)
+	at java.base/java.lang.Throwable.getLocalizedMessage(Throwable.java:397)
+	at java.base/java.lang.Throwable.toString(Throwable.java:496)
+	at java.base/java.lang.Throwable.<init>(Throwable.java:317)
+	at java.base/java.lang.Exception.<init>(Exception.java:103)
+	at java.base/java.lang.RuntimeException.<init>(RuntimeException.java:97)
+	at java.base/java.util.concurrent.CompletionException.<init>(CompletionException.java:88)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.InterruptedException
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:472)
+	at java.base/java.util.concurrent.TimeUnit.timedWait(TimeUnit.java:408)
+	at java.base/java.lang.ProcessImpl.waitFor(ProcessImpl.java:449)
+	at org.openqa.selenium.net.HostIdentifier.resolveHostName(HostIdentifier.java:52)
+	... 16 more
+Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 58853
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 10, 2022 12:40:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Feb 10, 2022 12:40:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
+Feb 10, 2022 12:40:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 98 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="Store manager user" classname="Account Types" time="11.208"/>
+</testsuite>
