@@ -9,6 +9,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginStepDefs {
     @Given("the user is on the login page")
@@ -26,6 +29,8 @@ public class LoginStepDefs {
     }
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() {
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
+        wait.until(ExpectedConditions.titleIs("Dashboard"));
         String actualTitle = Driver.get().getTitle();
         Assert.assertEquals("Dashboard", actualTitle);
     }
@@ -51,10 +56,9 @@ public class LoginStepDefs {
     }
     @Then("the title contains {string}")
     public void the_title_contains(String title) {
-        new DashBoardPage().waitUntilLoaderScreenDisappear();
-        BrowserUtils.waitFor(2);
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
+        wait.until(ExpectedConditions.titleIs(title));
       Assert.assertTrue(Driver.get().getTitle().contains(title));
-        System.out.println(title);
-        System.out.println(Driver.get().getTitle());
+
     }
 }
