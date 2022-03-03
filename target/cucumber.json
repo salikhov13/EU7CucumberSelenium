@@ -3,11 +3,20 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-03-03T14:34:58.095Z",
+        "start_timestamp": "2022-03-03T14:48:15.595Z",
         "before": [
           {
             "result": {
-              "duration": 5643035000,
+              "duration": 1187069000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setupDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3822441000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +31,16 @@
         "after": [
           {
             "result": {
-              "duration": 151226000,
+              "duration": 9148000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDownDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 146855000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +53,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5581528000,
+              "duration": 5770339000,
               "status": "passed"
             },
             "line": 19,
@@ -53,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 3287917000,
+              "duration": 3210449000,
               "status": "passed"
             },
             "line": 20,
@@ -75,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 3331203000,
+              "duration": 3291970000,
               "status": "passed"
             },
             "line": 21,
@@ -93,7 +111,7 @@
           },
           {
             "result": {
-              "duration": 2465425000,
+              "duration": 1326655000,
               "status": "passed"
             },
             "line": 22,
@@ -107,6 +125,9 @@
         "tags": [
           {
             "name": "@wip"
+          },
+          {
+            "name": "@db"
           }
         ]
       }

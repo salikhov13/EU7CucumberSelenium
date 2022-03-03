@@ -11,8 +11,14 @@ formatter.scenario({
   "tags": [
     {
       "name": "@wip"
+    },
+    {
+      "name": "@db"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -55,6 +61,9 @@ formatter.match({
   "location": "com.vytrack.step_definitions.ContactsStepDefs.the_information_should_be_same_with_database()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.after({

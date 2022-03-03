@@ -69,8 +69,6 @@ public class ContactsStepDefs {
         String actualEmail = contactInfoPage.email.getText();
         String actualPhone = contactInfoPage.phone.getText();
         //get info from database
-        //create connection
-        DBUtils.createConnection();
         String query = "select c.id, concat(first_name,' ',last_name) as \"full_name\", ce.email, cp.phone from orocrm_contact c\n" +
                 "join orocrm_contact_email ce\n" +
                 "on c.id = ce.owner_id\n" +
@@ -78,7 +76,6 @@ public class ContactsStepDefs {
                 "on c.id = cp.owner_id\n" +
                 "where ce.email = 'mbrackstone9@example.com'";
         Map<String, Object> rowMap = DBUtils.getRowMap(query);
-        DBUtils.destroy();
         //assertion
         String expectedFullName = (String)rowMap.get("full_name");
         String expectedPhone = (String)rowMap.get("phone");

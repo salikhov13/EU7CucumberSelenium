@@ -14,7 +14,7 @@ Feature: Contacts page
       | password  | UserUser123 |
       | firstname | John        |
       | lastname  | Doe         |
-    @wip
+    @wip @db
   Scenario: Contacts test with email
     Given the user logged in as "sales manager"
     And the user navigates to "Customers" "Contacts"
