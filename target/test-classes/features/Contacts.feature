@@ -1,4 +1,4 @@
-@wip
+
 Feature: Contacts page
 
   Scenario: Default page number
@@ -14,3 +14,10 @@ Feature: Contacts page
       | password  | UserUser123 |
       | firstname | John        |
       | lastname  | Doe         |
+    @wip
+  Scenario: Contacts test with email
+    Given the user logged in as "sales manager"
+    And the user navigates to "Customers" "Contacts"
+    When the user clicks the "mbrackstone9@example.com" from contacts
+    Then the information should be same with database
+
